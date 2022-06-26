@@ -4,7 +4,7 @@ from ssl import OP_NO_RENEGOTIATION
 from optparse import OptionParser
 import shutil
 
-# Pedir al usuario que ruta
+# Pedir al usuario que ruta !
 def get_argument():
     parser = OptionParser();
     parser.add_option("-p", "--path", dest="path", help="Path to delete 'node_modules'")
