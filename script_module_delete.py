@@ -4,7 +4,7 @@ from ssl import OP_NO_RENEGOTIATION
 from optparse import OptionParser
 import shutil
 
-# Pedir al usuario que ruta !!
+# Pedir al usuario que ruta !!!
 def get_argument():
     parser = OptionParser();
     parser.add_option("-p", "--path", dest="path", help="Path to delete 'node_modules'")
@@ -13,9 +13,8 @@ def get_argument():
         parser.error('[-] please specific an path, use --help for more info.')
     return options.path
 
-
+# !!
 def ls(ruta=''):
-    
     # listaarchivos = []12345678a
     for (a, b, archivos) in walk(ruta):
         for c in b:
